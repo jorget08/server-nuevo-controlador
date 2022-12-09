@@ -1,0 +1,52 @@
+{
+  "name": "Horus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=testing nodemon index.js",
+    "start": "node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "test2": "cross-env NODE_ENV=testing2 nodemon index.js",
+    "prod": "cross-env NODE_ENV=production nodemon index.js",
+    "staging": "cross-env NODE_ENV=staging nodemon index.js",
+    "migrations_dev": "cross-env NODE_ENV=development npx sequelize-cli db:migrate",
+    "migrations_test2": "cross-env NODE_ENV=testing2 npx sequelize-cli db:migrate",
+    "seeders_dev": "cross-env NODE_ENV=development npx sequelize-cli db:seed:all",
+    "migrations_prod": "cross-env NODE_ENV=production npx sequelize-cli db:migrate",
+    "seeders_prod": "cross-env NODE_ENV=production npx sequelize-cli db:seed:all",
+    "seeders_test": "cross-env NODE_ENV=testing npx sequelize-cli db:seed:all",
+    "seeders_test2": "cross-env NODE_ENV=testing2 npx sequelize-cli db:seed:all",
+    "seeders_staging": "cross-env NODE_ENV=staging npx sequelize-cli db:seed:all",
+    "migrations_test": "cross-env NODE_ENV=testing npx sequelize-cli db:migrate",
+    "migrations_suser": "cross-env NODE_ENV=superuser npx sequelize-cli db:migrate",
+    "migrations_staging": "cross-env NODE_ENV=staging npx sequelize-cli db:migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "2.21.0",
+    "axios": "0.21.1",
+    "bcryptjs": "2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "2.8.5",
+    "cross-env": "7.0.3",
+    "date-fns": "^2.27.0",
+    "dotenv": "8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "https": "1.0.0",
+    "neo4j-graphql-js": "2.19.2",
+    "node-cache": "^5.1.2",
+    "nodemon": "2.0.7",
+    "path": "0.12.7",
+    "pg": "8.5.1",
+    "sequelize": "6.5.0",
+    "ws": "7.4.4",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "sequelize-cli": "6.2.0"
+  }
+}
